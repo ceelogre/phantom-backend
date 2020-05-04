@@ -1,0 +1,27 @@
+{
+  "name": "phantom-backend",
+  "version": "1.0.0",
+  "description": "Elevate the public transport experience",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stackup-Rwanda/phantom-backend.git"
+  },
+  "keywords": [
+    "buses",
+    "transport",
+    "typescript"
+  ],
+  "author": "ceelogre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stackup-Rwanda/phantom-backend/issues"
+  },
+  "homepage": "https://github.com/Stackup-Rwanda/phantom-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
