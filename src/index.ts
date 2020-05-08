@@ -1,12 +1,19 @@
 import express from 'express'
 const app = express()
 
+let normalResponse: any = {
+    msg: 'App running.'
+}
+let exceptionalResponse: any = {
+    msg: 'Wow! you\'re a deep digger'
+}
 app.use('/', (req, res) => {
-    res.send('App running.')
+    res.json(normalResponse)
 })
 
 app.use('*', (req, res) => {
-    res.send('Wooww, you\'re a deep digger')
+    
+    res.json(exceptionalResponse)
 })
 
 app.listen('3003', () => {
