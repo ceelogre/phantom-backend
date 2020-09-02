@@ -1,5 +1,6 @@
 import express from 'express'
 const app = express()
+const port: any = process.env.PORT || 3003
 
 let normalResponse: any = {
     msg: 'App running.'
@@ -16,6 +17,6 @@ app.use('*', (req, res) => {
     res.json(exceptionalResponse)
 })
 
-app.listen('3003', () => {
+app.listen(port, () => {
     console.info('3003')
 })
