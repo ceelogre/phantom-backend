@@ -17,9 +17,15 @@
   },
   "nyc": {
     "extends": "@istanbuljs/nyc-config-typescript",
-    "reporter": "text-summary",
+    "reporter": [
+      "text-summary",
+      "lcov"
+    ],
     "all": "true",
-    "exclude": "dist"
+    "exclude": [
+      "dist",
+      "coverage"
+    ]
   },
   "repository": {
     "type": "git",
