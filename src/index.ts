@@ -18,5 +18,5 @@ app.use('*', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.info('3003')
+    console.info(port)
 })
