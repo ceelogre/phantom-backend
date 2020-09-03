@@ -12,13 +12,14 @@
     "extension": [
       "ts"
     ],
-    "spec": "test/**/*.spec.ts",
+    "spec": "src/test/**/*.spec.ts",
     "require": "ts-node/register"
   },
   "nyc": {
     "extends": "@istanbuljs/nyc-config-typescript",
-    "report": "lcov",
-    "reporter": "text-summary"
+    "reporter": "text-summary",
+    "all": "true",
+    "exclude": "dist"
   },
   "repository": {
     "type": "git",
